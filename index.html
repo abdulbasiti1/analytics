@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analytics</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="hero-headere">
@@ -30,6 +31,25 @@
           </div>
         </div>
       </div>
+      <div class="header-mobile container">
+        <div class="header-mobile__logo">
+          <img class="header-mobile__icon" src="Subtract.png" alt="" />
+          <h3 class="header-mobile__name">Analytics</h3>
+        </div>
+        <div class="header-mobile__actions">
+          <span class="header-mobile__sign-in"> sign in </span>
+          <span id="header-mobile__menu-button"
+            ><img src="./images/menu-icon.svg" alt=""
+          /></span>
+        </div>
+        <div class="header-mobile__links" id="header-mobile__links">
+          <a class="header-mobile__link" href="Products">Products</a>
+          <a class="header-mobile__link" href="Pricing">Pricing</a>
+          <a class="header-mobile__link" href="FAQ">FAQ</a>
+          <a class="header-mobile__link" href="Blog">Blog</a>
+          <a class="header-mobile__link" href="Blog">Blog</a>
+        </div>
+      </div>
       <div class="hero">
         <div class="container hero-inner">
           <div class="hero-text">
@@ -48,7 +68,7 @@
             <div class="Try-for-free">Try for free</div>
           </div>
           <div class="hero-image">
-            <img src="./hero.png" alt="" />
+            <img src="./images/main-screen.svg" alt="" />
           </div>
         </div>
       </div>
@@ -212,12 +232,34 @@
             <a class="pages__link" href="Blog">Blog</a>
           </div>
           <div class="navbar-social-media">
-            <img src="./Facebook.svg" alt="" class="social-media__logo" />
-            <img src="./Twitter.svg" alt="" class="social-media__logo" />
-            <img src="./Instagram.svg" alt="" class="social-media__logo" />
+            <img
+              src="./images/Facebook-logo.svg"
+              alt=""
+              class="social-media__logo"
+            />
+            <img
+              src="./images/Twitter-logo.svg"
+              alt=""
+              class="social-media__logo"
+            />
+            <img
+              src="./images/Instagram-logo.svg"
+              alt=""
+              class="social-media__logo"
+            />
           </div>
         </div>
       </div>
     </section>
+    <script>
+      function openMenu() {
+        console.log("asd");
+        headerLinks.classList.toggle("header-mobile__links--open");
+      }
+      let headerLinks = document.getElementById("header-mobile__links");
+      let headerButton = document.getElementById("header-mobile__menu-button");
+
+      headerButton.addEventListener("click", openMenu);
+    </script>
   </body>
 </html>
