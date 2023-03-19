@@ -57,7 +57,7 @@ body {
 .hero-headere {
   background-color: #172755;
   border-bottom: 15px solid #ef2a82;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   /* padding-top: 48px; */
 }
 .container {
@@ -162,7 +162,7 @@ body {
   color: #8794ba;
 }
 .main-features {
-  margin-bottom: 400px;
+  margin-bottom: 150px;
   /* background-color: #ffffff; */
 }
 .main-pictures {
